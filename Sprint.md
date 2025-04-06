@@ -1,4 +1,4 @@
-## 2. Plan del Sprint
+# Sprint Planning
 
 ### Sprint 1 (Duración: 1-2 semanas)
 
