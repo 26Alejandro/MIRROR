@@ -9,8 +9,8 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 
 ### Historias seleccionadas:
 
-- **Historia #1**: Alertas en tiempo real 
-- **Historia #2**: Panel de estado de la red 
+- **Historia #1**: Alertas en tiempo real (8/10 puntos)
+- **Historia #2**: Panel de estado de la red (5/10 puntos)
 
 ---
 
