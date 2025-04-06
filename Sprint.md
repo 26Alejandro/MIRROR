@@ -1,6 +1,6 @@
 # Sprint Planning
 
-### Sprint 1 (Duración: 1-2 semanas)
+### Duracion estimada: 1-2 semanas
 
 **Objetivo del Sprint:**  
 Implementar monitorización en tiempo real y sistema básico de alertas.
