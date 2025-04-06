@@ -9,8 +9,8 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 
 ### Historias seleccionadas:
 
-- **Historia #1**: Alertas en tiempo real (8 puntos)  
-- **Historia #2**: Panel de estado de la red (5 puntos)
+- **Historia #1**: Alertas en tiempo real 
+- **Historia #2**: Panel de estado de la red 
 
 ---
 
@@ -19,22 +19,20 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 | ID  | Tarea                                           | Estimación (horas) | Asignado a | Estado        |
 |-----|-------------------------------------------------|--------------------|------------|---------------|
 | 1.1 | Diseñar arquitectura de monitorización          | 4                  | Alejandro        | Completado    |
-| 1.2 | Implementar colector de logs                    | 6                  | Alejandro     | En progreso   |
-| 1.3 | Desarrollar motor de análisis de eventos        | 8                  | Alejandro        | No iniciado   |
-| 1.4 | Crear sistema de notificaciones                 | 5                  | Alejandro     | No iniciado   |
-| 1.5 | Pruebas unitarias para detección                | 3                  | Alejandro        | No iniciado   |
-| 2.1 | Diseñar interfaz del panel                      | 3                  | Alejandro     | Completado    |
-| 2.2 | Implementar visualizaciones de métricas         | 8                  | Alejandro        | No iniciado   |
-| 2.3 | Desarrollar actualizaciones en tiempo real      | 6                  | Alejandro     | No iniciado   |
-| 2.4 | Pruebas de rendimiento del panel                | 2                  | Alejandro        | No iniciado   |
+| 1.2 | Desarrollar motor de análisis de eventos        | 4                  | Alejandro        | No iniciado   |
+| 1.3 | Crear sistema de notificaciones                 | 4                  | Alejandro     | No iniciado   |
+| 1.4 | Pruebas unitarias para detección                | 4                  | Alejandro        | No iniciado   |
+| 1.5 | Diseñar interfaz del panel                      | 4                  | Alejandro     | Completado    |
+| 2.1 | Desarrollar actualizaciones en tiempo real      | 4                  | Alejandro     | No iniciado   |
 
-**Capacidad del equipo:** 45 horas/persona por sprint  
-**Total estimado:** 45 horas
+
+**Capacidad del equipo:** 24 horas/persona por sprint  
+**Total estimado:** 24 horas
 
 ---
 
 ### Reuniones programadas:
 
 - **Daily Standup:** Diariamente a las 9:00 AM (15 minutos)  
-- **Sprint Review:** 14/10/2023 a las 10:00 AM (1 hora)  
-- **Sprint Retrospective:** 14/10/2023 a las 11:00 AM (1 hora)
+- **Sprint Review:** 10/4/2025 a las 10:00 AM (1 hora)  
+- **Sprint Retrospective:** 10/4/2025 a las 11:00 AM (1 hora)
