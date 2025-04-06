@@ -22,8 +22,7 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 | 1.2 | Desarrollar motor de análisis de eventos        | 4                  | Alejandro        | No iniciado   |
 | 1.3 | Crear sistema de notificaciones                 | 4                  | Alejandro     | No iniciado   |
 | 1.4 | Pruebas unitarias para detección                | 4                  | Alejandro        | No iniciado   |
-| 1.5 | Diseñar interfaz del panel                      | 4                  | Alejandro     | Completado    |
-| 2.1 | Desarrollar actualizaciones en tiempo real      | 4                  | Alejandro     | No iniciado   |
+| 1.5 | Desarrollar actualizaciones en tiempo real      | 4                  | Alejandro     | No iniciado   |
 
 
 **Capacidad del equipo:** 24 horas/persona por sprint  
