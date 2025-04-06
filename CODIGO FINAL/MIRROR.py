@@ -1,8 +1,10 @@
 import subprocess
+import time
 import re
 import os
 import sys
 
+INTERVALO = 60
 redes = ['10.0.2.0/24', '192.168.18.0/24']
 
 def escanear_red(netrange):
@@ -50,12 +52,15 @@ def verificar_root():
 def main():
     verificar_root()
 
-    print("\n============================")
-    print("🛰 Escaneo de red en curso")
-    print("============================")
-    for red in redes:
-        dispositivos = escanear_red(red)
-        mostrar_dispositivos(dispositivos)
+    while True:
+        print("\n============================")
+        print("🛰 Escaneo de red en curso")
+        print("============================")
+        for red in redes:
+            dispositivos = escanear_red(red)
+            mostrar_dispositivos(dispositivos)
+        print(f"\n⌛ Esperando {INTERVALO} segundos antes del próximo escaneo...\n")
+        time.sleep(INTERVALO)
 
 if __name__ == "__main__":
     main()
