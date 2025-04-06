@@ -19,13 +19,11 @@
 5. **Como gerente de seguridad, necesito informes periódicos de incidentes para evaluar tendencias y patrones de ataque.**  
    - *Criterio de aceptación:* Los informes deben incluir estadísticas, gráficos y recomendaciones.
 
-6. **Como especialista en seguridad, quiero poder personalizar reglas de detección para adaptarlas a nuestro entorno específico.**  
-   - *Criterio de aceptación:* La interfaz debe permitir crear, editar y probar reglas de detección personalizadas.
 
 ## BAJA
 
-7. **Como analista, quiero integrar fuentes de inteligencia de amenazas externas para mejorar la detección de amenazas emergentes.**  
+6. **Como analista, quiero integrar fuentes de inteligencia de amenazas externas para mejorar la detección de amenazas emergentes.**  
    - *Criterio de aceptación:* El sistema debe actualizar automáticamente los indicadores de compromiso desde fuentes configurables.
 
-8. **Como administrador, necesito gestionar permisos de usuarios del sistema para limitar el acceso según roles y responsabilidades.**  
+7. **Como administrador, necesito gestionar permisos de usuarios del sistema para limitar el acceso según roles y responsabilidades.**  
    - *Criterio de aceptación:* Debe existir un sistema de roles con permisos granulares configurables.
