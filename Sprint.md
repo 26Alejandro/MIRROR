@@ -18,15 +18,15 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 
 | ID  | Tarea                                           | Estimación (horas) | Asignado a | Estado        |
 |-----|-------------------------------------------------|--------------------|------------|---------------|
-| 1.1 | Diseñar arquitectura de monitorización          | 4                  | Ana        | Completado    |
-| 1.2 | Implementar colector de logs                    | 6                  | Carlos     | En progreso   |
-| 1.3 | Desarrollar motor de análisis de eventos        | 8                  | Ana        | No iniciado   |
-| 1.4 | Crear sistema de notificaciones                 | 5                  | Carlos     | No iniciado   |
-| 1.5 | Pruebas unitarias para detección                | 3                  | Ana        | No iniciado   |
-| 2.1 | Diseñar interfaz del panel                      | 3                  | Carlos     | Completado    |
-| 2.2 | Implementar visualizaciones de métricas         | 8                  | Ana        | No iniciado   |
-| 2.3 | Desarrollar actualizaciones en tiempo real      | 6                  | Carlos     | No iniciado   |
-| 2.4 | Pruebas de rendimiento del panel                | 2                  | Ana        | No iniciado   |
+| 1.1 | Diseñar arquitectura de monitorización          | 4                  | Alejandro        | Completado    |
+| 1.2 | Implementar colector de logs                    | 6                  | Alejandro     | En progreso   |
+| 1.3 | Desarrollar motor de análisis de eventos        | 8                  | Alejandro        | No iniciado   |
+| 1.4 | Crear sistema de notificaciones                 | 5                  | Alejandro     | No iniciado   |
+| 1.5 | Pruebas unitarias para detección                | 3                  | Alejandro        | No iniciado   |
+| 2.1 | Diseñar interfaz del panel                      | 3                  | Alejandro     | Completado    |
+| 2.2 | Implementar visualizaciones de métricas         | 8                  | Alejandro        | No iniciado   |
+| 2.3 | Desarrollar actualizaciones en tiempo real      | 6                  | Alejandro     | No iniciado   |
+| 2.4 | Pruebas de rendimiento del panel                | 2                  | Alejandro        | No iniciado   |
 
 **Capacidad del equipo:** 45 horas/persona por sprint  
 **Total estimado:** 45 horas
