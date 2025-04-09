@@ -20,7 +20,7 @@ Implementar monitorización en tiempo real y sistema básico de alertas.
 |-----|-------------------------------------------------|--------------------|------------|---------------|
 | 1.1 | Diseñar arquitectura de monitorización          | 4                  | Alejandro        | Completado    |
 | 1.2 | Desarrollar motor de análisis de eventos        | 4                  | Alejandro        | Completado   |
-| 1.3 | Crear sistema de notificaciones                 | 4                  | Alejandro     | Completado   |
+| 1.3 | Crear sistema de notificaciones                 | 4                  | Alejandro     | En proceso   |
 | 1.4 | Pruebas unitarias para detección                | 4                  | Alejandro        | Completado   |
 | 1.5 | Desarrollar actualizaciones en tiempo real      | 4                  | Alejandro     | No iniciado   |
 
