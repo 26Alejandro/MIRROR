@@ -1,8 +1,8 @@
-# MKIRROR
+# MIRROR
 
 ## Descripción
 
-Network Monitor es una herramienta de seguridad de red ligera diseñada para monitorizar dispositivos conectados a redes especificadas. El sistema escanea periódicamente las redes configuradas y alerta cuando detecta dispositivos no autorizados, proporcionando una capa adicional de seguridad para entornos domésticos y pequeñas empresas.
+MIRROR es una herramienta de seguridad de red ligera diseñada para monitorizar dispositivos conectados a redes especificadas. El sistema escanea periódicamente las redes configuradas y alerta cuando detecta dispositivos no autorizados, proporcionando una capa adicional de seguridad para entornos domésticos y pequeñas empresas.
 
 ## 🔑 Características principales
 
@@ -17,13 +17,14 @@ Network Monitor es una herramienta de seguridad de red ligera diseñada para mon
 - Nmap
 - Privilegios de administrador/root
 - Sistema operativo compatible (Linux/macOS/Windows con WSL)
+- Se recomienda usar KALI Linux
 
 ## 🚀 Instalación
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/usuario/network-monitor.git
-cd network-monitor
+git clone https://github.com/26Alejandro/MIRROR.git
+cd MIRRoR
 ```
 
 2. Instala las dependencias de sistema:
