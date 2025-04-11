@@ -7,33 +7,11 @@ import sys
 # Configuración
 INTERVALO = 60
 redes = ['10.0.2.0/24', '192.168.18.0/24']
-ips_conocidas = []
-
-
-def solicitar_ips_conocidas():
-    """Solicita al usuario que ingrese las IPs conocidas en la red"""
-    print("\n=== CONFIGURACIÓN INICIAL ===")
-    print("Ingrese las IPs conocidas en la red. Deje en blanco para terminar.")
-
-    contador = 1
-    while True:
-        ip = input(f"IP conocida #{contador} (o presione Enter para terminar): ").strip()
-        if not ip:
-            break
-
-        # Validación básica de formato IP
-        if re.match(r'^(\d{1,3}\.){3}\d{1,3}$', ip):
-            ips_conocidas.append(ip)
-            contador += 1
-        else:
-            print("❌ Formato de IP inválido. Use el formato: xxx.xxx.xxx.xxx")
-
-    print(f"\n✅ Se han registrado {len(ips_conocidas)} IPs conocidas.")
-
-    # Opción para agregar una red completa como conocida
-    agregar_red = input(
-        "\n¿Desea marcar todos los dispositivos detectados en el primer escaneo como conocidos? (s/n): ").strip().lower()
-    return agregar_red == 's'
+# Define aquí las IPs conocidas directamente en el código
+ips_conocidas = [
+    '192.168.18.75',
+    # Agrega más IPs conocidas aquí
+]
 
 
 def escanear_red(netrange):
@@ -101,9 +79,10 @@ def mostrar_dispositivos(dispositivos, detectar_desconocidos=True):
         # Opcional: Sonido de alerta
         print('\a')  # Beep de alerta
 
-        # Pregunta si desea agregar estas IPs a la lista de conocidas
-        agregar = input("\n¿Desea agregar estas IPs a la lista de conocidas? (s/n): ").strip().lower()
-        if agregar == 's':
+        # La opción de agregar automáticamente IPs desconocidas también se puede configurar aquí
+        AGREGAR_DESCONOCIDAS_AUTOMATICAMENTE = False  # Cambia a True si quieres agregar automáticamente
+
+        if AGREGAR_DESCONOCIDAS_AUTOMATICAMENTE:
             for ip, _, _ in ips_desconocidas:
                 # Extraer solo la dirección IP si tiene un hostname
                 ip_addr = ip
@@ -114,7 +93,7 @@ def mostrar_dispositivos(dispositivos, detectar_desconocidos=True):
 
                 if ip_addr not in ips_conocidas:
                     ips_conocidas.append(ip_addr)
-            print(f"✅ IPs agregadas a la lista de conocidas. Total: {len(ips_conocidas)}")
+            print(f"✅ IPs agregadas automáticamente a la lista de conocidas. Total: {len(ips_conocidas)}")
 
     return ips_desconocidas
 
@@ -129,28 +108,12 @@ def verificar_root():
 def main():
     verificar_root()
 
-    # Solicitar IPs conocidas al inicio
-    aprender_primer_escaneo = solicitar_ips_conocidas()
-
-    # Primer escaneo (opcional para aprender la red)
-    if aprender_primer_escaneo:
-        print("\n🔍 Realizando escaneo inicial para aprender la red...")
-        for red in redes:
-            dispositivos = escanear_red(red)
-            # No detectar desconocidos en este primer escaneo
-            for ip, _, _ in dispositivos:
-                # Extraer solo la dirección IP si tiene un hostname
-                ip_addr = ip
-                if not re.match(r'^(\d{1,3}\.){3}\d{1,3}$', ip):
-                    ip_match = re.search(r'\((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)', ip)
-                    if ip_match:
-                        ip_addr = ip_match.group(1)
-
-                if ip_addr not in ips_conocidas:
-                    ips_conocidas.append(ip_addr)
-
-            mostrar_dispositivos(dispositivos, detectar_desconocidos=False)
-        print(f"\n✅ Se han registrado {len(ips_conocidas)} IPs conocidas del escaneo inicial.")
+    # Muestra la configuración actual
+    print("\n=== CONFIGURACIÓN ===")
+    print(f"Redes a escanear: {', '.join(redes)}")
+    print(f"IPs conocidas configuradas: {len(ips_conocidas)}")
+    print(f"Intervalo de escaneo: {INTERVALO} segundos")
+    print("====================\n")
 
     # Bucle principal de monitorización
     while True:
